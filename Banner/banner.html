@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement Poster</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: white;
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .headerred {
+            background-color: darkred;
+            width: 50px;
+            height: 90px;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .header-left img {
+            width: 100px;
+            margin-right: 10px;
+        }
+        .header-right {
+            flex: 1;
+            text-align: right;
+            padding-right: 30px;
+        }
+        .header-right h1 {
+            margin: 0;
+            color: #600805;
+        }
+        .header-red {
+            background-color: darkred;
+            width: 200px;
+            height: 90px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content .announcement {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content .announcement h1 {
+            margin: 0;
+            color: darkred;
+        }
+        .content .announcement h1.congrats {
+            font-family:cursive;
+        }
+        .content .announcement h1.lpa {
+            font-size: 50px;
+            color: #f0ad4e;
+            background-color: red;
+            padding: 10px 7px;
+            border-radius: 20px;
+            color: white;
+            position: relative;
+            top: 25px;
+            left: -25px;
+        }
+        .content p {
+            margin: 10px 0;
+            color: darkred;
+        }
+        .profiles {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .profile {
+            margin: 0 40px;
+            text-align: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            border: 3px solid darkred;
+        }
+        .profile h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .highlight {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            height: 120px;
+            width: 500px;
+            margin: right;
+            font-size: 30px;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 7px;
+        }
+        .highlight img {
+            width: 100px;
+            margin-right: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            color: #555;
+            text-align: right;
+            position: relative;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: cenetr;
+            background-color: darkred;
+        }
+        .footer p {
+            margin: 0;
+            line-height: 50px; /* Centers the text vertically */
+            color: white; /* Added to ensure phone number color */
+        }
+        .footer .contact {
+            /* Your existing contact button styles */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            line-height: 40px; /* Centers the text vertically */
+            text-align: right;
+            margin-left: 10px; /* Adjust to move the contact details upwards */
+            display: flex;
+            align-items: center;
+            background-color: darkred;
+        }
+        .footer .call-logo {
+            /* New styles for the call logo */
+            width: 30px; /* Adjust size as needed */
+            margin-right: 5px; /* Spacing between text and logo */
+            background-color: #600805;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headerred"></div>
+            <div class="header-left">
+                <img src="./logo.jpeg" alt="Logo 1">
+                <img src="./logo2.jpeg" alt="Logo 2">
+            </div>
+            <div class="header-right">
+                <h1 style="font-size: 50px;">SANJIVANI</h1>
+                <h1 style="font-size: 15px;">COLLEGE OF ENGINEERING</h1>
+            </div>
+            <div class="header-red"></div>
+        </div>
+        <div class="content">
+            <div class="announcement">
+                <h1 class="congrats" style="font-size: 50px;">Congratulations</h1>
+                <h1 class="lpa">8.5 LPA</h1>
+            </div>
+            <p style="text-align: left; font-size: 20px; margin-top: 0;">for getting placed in</p>
+            <h2 style="text-align: left; font-size: 30px; margin-top: 0; color: darkred;">APTIV COMPONENTS PVT.LTD</h2>
+            <div class="profiles">
+                <div class="profile">
+                    <img src="./photo2.jpg" alt="ShraddhaJejurkar">
+                    <h3>Shraddha Jejurkar</h3>
+                </div>
+                <div class="profile">
+                    <img src="./photo3.png" alt="ShravaniModhave">
+                    <h3>Shravani Modhave</h3>
+                </div>
+            </div>
+            <div class="highlight">
+                <img src="./little-boy-holding-flag-logo-260nw-1870090048.jpg" alt="Logo">
+                <span>Mechatronics' first batch sets the bar high by claiming 8.5 LPA.</span>
+            </div>
+        </div>
+        <div class="footer">
+            <p style="color: white;">Ahmednagar, Maharashtra</p>
+            <div class="contact">
+                <img src="./th.jpg" alt="Call Logo" class="call-logo">
+                Call 8799980070
+            </div>
+        </div>
+    </div>
+</body>
+</html>
